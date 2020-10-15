@@ -10,7 +10,7 @@ stages:
   jobs:
   - job: Job1
     steps: 
-    - bash: java --version
+    - bash: java -version
     - bash: python --version
     - bash: mvn --version
   
