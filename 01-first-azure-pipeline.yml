@@ -11,7 +11,7 @@ pool:
 jobs:
 -job: job1
   steps:
-  - script: Job 1!
+  - script: echo Job 1!
     displayName: 'Run a one-line script'
 
   - script: |
@@ -21,7 +21,7 @@ jobs:
 
 -job: job2
   steps:
-  - script: job 2!
+  - script: echo job 2!
     displayName: 'Run a one-line script'
 
   - script: |
