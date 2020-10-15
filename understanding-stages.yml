@@ -11,8 +11,8 @@ stages:
   - job: Job1
     steps: 
     - bash: java --version
-    - bash python --version
-    - bash mvn --version
+    - bash: python --version
+    - bash: mvn --version
   
 # - stage: Dev
 #   jobs:
