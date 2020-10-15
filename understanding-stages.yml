@@ -9,20 +9,21 @@ stages:
 - stage: Build
   jobs:
   - job: Job1
-    steps:
-      - echo job1 done
+    steps: 
+      - script: echo job1 done
   - job: Job2
     steps:
-      - echo job2 done
+      - script: echo job2 done
 
 - stage: Dev
   jobs:
   - job: Job1
-    steps:
-      - echo job1 done
+    steps: 
+      - script: echo job1 done
   - job: Job2
     steps:
-      - echo job2 done
+      - script: echo job2 done
+
 
 - stage: Uat
   dependsOn:
@@ -30,8 +31,9 @@ stages:
   - Dev
   jobs:
   - job: Job1
-    steps:
-      - echo job1 done
+    steps: 
+      - script: echo job1 done
   - job: Job2
     steps:
-      - echo job2 done
+      - script: echo job2 done
+
