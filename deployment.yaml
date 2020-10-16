@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: hello-python
-        image: piyushnav/first-build-on-dockerhub:23
+        image: piyushnav/first-build-on-dockerhub:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
