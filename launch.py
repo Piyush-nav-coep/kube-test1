@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "lets deploy 1st application!"
+    return "lets deploy 2nd application!"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
