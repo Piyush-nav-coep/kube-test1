@@ -26,4 +26,6 @@ stages:
         repository: 'piyushnav/first-build-on-dockerhub'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: '$(tag)'
+        tags: |
+          '$(tag)'
+          'latest'
