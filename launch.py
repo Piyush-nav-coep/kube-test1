@@ -1,8 +1,10 @@
+
 from flask import Flask
-import time
-helloworld = Flask(__name__)
-@helloworld.route("/")
-def run():
-    return "{\"message\":\"Python Application test |\"}"
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello from Python!"
+
 if __name__ == "__main__":
-    helloworld.run(host="0.0.0.0", port=int("7044"), debug=True)
+    app.run(host='0.0.0.0')
